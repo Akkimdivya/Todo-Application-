@@ -36,7 +36,7 @@ const Card = ({ data }) => {
 
   const updateTimeInDatabase = async () => {
     try {
-      await axios.patch(`http://localhost:5000/update-time/${_id}`, { timeSpent });
+      await axios.patch(`https://todo-application-vrr8.onrender.com/update-time/${_id}`, { timeSpent });
       console.log("Time updated successfully in the database");
     } catch (error) {
       console.error("Error updating time:", error);

@@ -12,7 +12,7 @@ const Home = () => {
   // Fetching jobs from the API
   useEffect(() => {
     setIsLoading(true);
-    fetch("http://localhost:5000/all-tasks/")
+    fetch("https://todo-application-vrr8.onrender.com/all-tasks/")
       .then((res) => res.json())
       .then((data) => {
         setJobs(data);

@@ -33,7 +33,7 @@ const router = createBrowserRouter([
             {
                 path: 'edit-task/:id',
                 element: <ProtectedRoute element={<UpdateJob />} />, // Protecting the UpdateJob route
-                loader: ({ params }) => fetch(`http://localhost:5000/all-tasks/${params.id}`),
+                loader: ({ params }) => fetch(`https://todo-application-vrr8.onrender.com/all-tasks/${params.id}`),
             },
             {
                 path: 'task/:id',

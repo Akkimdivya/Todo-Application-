@@ -22,7 +22,7 @@ const MyJobs = () => {
       const email = user.email; // Get the user's email
 
       // Fetch jobs based on user's email
-      fetch(`http://localhost:5000/myTasks/${email}/`)
+      fetch(`https://todo-application-vrr8.onrender.com/myTasks/${email}/`)
         .then((res) => res.json())
         .then((data) => {
           setJobs(data);
@@ -62,7 +62,7 @@ const MyJobs = () => {
   };
 
   const handleDelete = (id) => {
-    fetch(`http://localhost:5000/task/${id}`, {
+    fetch(`https://todo-application-vrr8.onrender.com/task/${id}`, {
       method: "DELETE",
     })
       .then((res) => res.json())

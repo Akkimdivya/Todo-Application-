@@ -29,7 +29,7 @@ const CreateJob = () => {
     
       const onSubmit = (data) => {
         //console.log(data)
-        fetch("http://localhost:5000/post-task/",{
+        fetch("https://todo-application-vrr8.onrender.com/post-task/",{
             method:"POST",
             headers:{'Content-Type':'application/json'},
             body:JSON.stringify(data)

@@ -32,7 +32,7 @@ const UpdateJob = () => {
     
       const onSubmit = (data) => {
         //console.log(data)
-        fetch(`http://localhost:5000/update-task/${id}`,{
+        fetch(`https://todo-application-vrr8.onrender.com/update-task/${id}`,{
             method:"PATCH",
             headers:{'Content-Type':'application/json'},
             body:JSON.stringify(data)
