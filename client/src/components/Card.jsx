@@ -62,13 +62,13 @@ const Card = ({ data }) => {
           <h3 className='text-lg sm:text-xl font-bold mb-2 text-gray-800 truncate'>{task}</h3>
           <div className='text-sm flex flex-wrap gap-2 mb-2 text-gray-600'>
             <span className='flex items-center gap-1 sm:gap-2 truncate'>
-              <FiMapPin className='text-blue-500' />{status}
+              <FiCalendar className='text-blue-500' />{status}
             </span>
             <span className='flex items-center gap-1 sm:gap-2 truncate'>
               <FiClock className='text-blue-500' />{deadline}
             </span>
             <span className='flex items-center gap-1 sm:gap-2 truncate'>
-              <FiCalendar className='text-blue-500' />{postedFor}
+              <FiMapPin className='text-blue-500' />{postedFor}
             </span>
           </div>
           <div className='text-xs sm:text-sm text-gray-600 max-h-24'>
