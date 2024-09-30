@@ -78,7 +78,7 @@ const MyJobs = () => {
   return (
     <div className="max-w-screen-2xl container mx-auto xl:px-24 px-4">
       <div className="my-jobs-container">
-        <h1 className="text-center p-4">Taskes Allocated to you</h1>
+        <h1 className="text-center p-4">For self-allocation, enter your email. To assign tasks to others, enter their email. If no tasks are assigned, none will be displayed.</h1>
         <div className="search-box p-2 text-center mb-2">
           <input
             onChange={(e) => setSearchText(e.target.value)}
