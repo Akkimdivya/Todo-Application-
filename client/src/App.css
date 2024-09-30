@@ -160,7 +160,7 @@ li {
 .loginpage{
   display: flex;
   flex-direction: column;
-  background-color:blue;
+  background-color:rgba(13, 13, 119, 0.615);
   text-align: center;
   justify-content: center;
   font-weight: 900;
