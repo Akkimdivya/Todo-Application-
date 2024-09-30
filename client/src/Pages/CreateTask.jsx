@@ -39,7 +39,7 @@ const CreateJob = () => {
             //console.log(result)
             if(result.acknowledged===true){
                 alert('Task added Successfully!!!')
-                window.location.href='http://localhost:5173/your-tasks';
+                window.location.href='https://todo-application-eight-pi.vercel.app/your-tasks';
             }
             reset()
         })

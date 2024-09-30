@@ -5,7 +5,6 @@ import CreateJob from '../Pages/CreateTask';
 import MyJobs from '../Pages/MyTasks';
 import TaskAllocation from '../Pages/taskAllocation'
 import UpdateJob from '../Pages/UpdateTask';
-import JobDetails from '../Pages/taskDetails';
 import Login from '../components/Login';
 import ProtectedRoute from '../components/ProtectedRoute';
 
@@ -35,10 +34,6 @@ const router = createBrowserRouter([
                 element: <ProtectedRoute element={<UpdateJob />} />, // Protecting the UpdateJob route
                 loader: ({ params }) => fetch(`https://todo-application-vrr8.onrender.com/all-tasks/${params.id}`),
             },
-            {
-                path: 'task/:id',
-                element: <ProtectedRoute element={<JobDetails />} />, // Protecting the JobDetails route
-            }
         ]
     },
     {

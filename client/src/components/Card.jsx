@@ -71,7 +71,7 @@ const Card = ({ data }) => {
               <FiCalendar className='text-blue-500' />{postedFor}
             </span>
           </div>
-          <div className='text-xs sm:text-sm text-gray-600 max-h-24 overflow-y-scroll'>
+          <div className='text-xs sm:text-sm text-gray-600 max-h-24'>
             {description}
           </div>
 

@@ -6,8 +6,7 @@ import { getAuth } from 'firebase/auth';
 const UpdateJob = () => {
     const{id}=useParams()
     //console.log(id)
-    const {_id,task,priority,status,deadline,description,postedFor,myMail}=useLoaderData()
-    const [selectedOption,setSelectionOption]=useState(null);
+    const {_id,task,priority,status,deadline,description,postedFor}=useLoaderData()
     const [userEmail, setUserEmail] = useState('');
 
     // Retrieve the current user's email when the component mounts
@@ -42,7 +41,7 @@ const UpdateJob = () => {
             //console.log(result)
             if(result.acknowledged===true){
                 alert('Task Updated Successfully!!!')
-                window.location.href='http://localhost:5173/your-tasks';
+                window.location.href='https://todo-application-eight-pi.vercel.app/your-tasks';
             }
             reset()
         })

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Jobs = ({result}) => {
+const todos = ({result}) => {
   return (
     <>
       <div>
@@ -11,4 +11,4 @@ const Jobs = ({result}) => {
   )
 }
 
-export default Jobs
+export default todos
