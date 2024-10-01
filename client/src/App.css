@@ -149,12 +149,41 @@ li {
   flex-direction: row;
 }
 
+.options-container {
+  display: flex; /* Use flexbox for better alignment */
+  gap: 10px; /* Adjust the gap between options */
+  flex-wrap: wrap; /* Allow wrapping to avoid overflow */
+  margin-top: 10px; /* Add space above the container if needed */
+}
+
+.draggable-option {
+  background-color: #f0f0f0; /* Light gray background */
+  border: 1px solid #271cc4; /* Light border */
+  padding: 10px 15px; /* Padding for better spacing */
+  border-radius: 5px; /* Rounded corners */
+  cursor: grab; /* Change cursor to indicate draggable */
+  display: inline-block; /* Keep the option inline */
+  transition: background-color 0.2s, box-shadow 0.2s; /* Smooth transition */
+}
+
+.draggable-option:active {
+  cursor: grabbing; /* Change cursor while dragging */
+  background-color: #2422a2; /* Slightly darker background when active */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect when grabbed */
+}
+
+.draggable-option:hover {
+  background-color: #e8e8e8; /* Slightly change background on hover */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); /* Subtle shadow on hover */
+}
+
+
 .create-job-flex{
   @apply flex flex-col lg:flex-row items-center justify-between gap-8;
 }
 
 .create-job-input{
-  @apply block w-full flex-1 bg-white py-1.5 pl-3 text-gray-900 placeholder:text-gray-400 focus:outline-none sm:text-sm sm:leading-6
+  @apply block w-full flex-1 bg-white py-1.5 pl-3 text-gray-900 placeholder:text-gray-400 sm:text-sm sm:leading-6
 }
 
 .loginpage{
